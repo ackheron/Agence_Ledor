@@ -48,7 +48,8 @@ li {
 }
 
 header {
-    padding: 1rem 2rem;
+    padding: 0 2rem;
+    height: 5.625rem;
     background: #333;
     display: flex;
     justify-content: space-between;
@@ -61,16 +62,30 @@ header a {
 
 header ul {
     display: flex;
+    align-items: center;
     flex-flow: row nowrap;
+    height: 100%;
 }
 
 header ul li {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
 }
+
+header ul li a {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
 
 header ul li a:hover {
     color: #f6b93b;
-    transition: 300ms;
+    border-bottom: 3px solid #f6b93b;
+    padding-top: 3px;
 }
 
 .vp-logo {
@@ -89,8 +104,34 @@ header ul li a:hover {
 }
 
 .vp-logo a {
+    display: inline-block;
     font-size: 3rem;
+    position: relative;
 }
+
+
+/*=============================================
+=            logo animation            =
+=============================================*/
+
+.vp-logo a:before {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1.5em;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    color: #f6b93b;
+}
+
+.vp-logo a:hover:before {
+    width: 100%;
+
+}
+
+/*=====  End of logo animation  ======*/
+
 
 
 .vp {
