@@ -39,6 +39,11 @@ li {
     list-style: none;
 }
 
+strong {
+    color: #f6b93b;
+    font-weight: 400;
+}
+
 /* vp +  header */
 
 .vp-container {
@@ -86,6 +91,7 @@ header ul li a:hover {
     color: #f6b93b;
     border-bottom: 3px solid #f6b93b;
     padding-top: 3px;
+    transition: 100ms;
 }
 
 .vp-logo {
@@ -104,8 +110,12 @@ header ul li a:hover {
 }
 
 .vp-logo a {
-    display: inline-block;
     font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: .625rem;
+
+    /* display et position pour l’animation */
+    display: inline-block;
     position: relative;
 }
 
@@ -132,8 +142,29 @@ header ul li a:hover {
 
 /*=====  End of logo animation  ======*/
 
-
-
 .vp {
     flex: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/frame.jpg) center center/cover;
+}
+
+.vp-content {
+    max-width: 50rem;
+    text-align: center;
+    color: white;
+}
+
+.vp-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.vp-content p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: .125rem;
+    line-height: 2.5rem;
 }
