@@ -17,6 +17,8 @@
 html,
 body {
     font-family: "Montserrat", sans-serif;
+    background: #eee;
+    color: #333;
 }
 
 p {
@@ -43,6 +45,21 @@ strong {
     color: #f6b93b;
     font-weight: 400;
 }
+
+/* classe générale */
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: block;
+    max-width: 75rem;
+    margin: auto;
+}
+
+
 
 /* vp +  header */
 
@@ -167,4 +184,41 @@ header ul li a:hover {
     font-weight: 400;
     letter-spacing: .125rem;
     line-height: 2.5rem;
+}
+
+
+/* offer */
+
+.offer {
+    padding: 10rem 1rem;
+}
+
+.offer-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.offer-elem {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    flex: 1;
+}
+
+.offer-elem-img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.offer-elem-text {
+    text-align: center;
+    padding: 1rem;
+}
+
+.offer-separator {
+    margin: 1rem auto;
+    width: 3.75rem;
+    height: 1.5px;
+    background: #333;
 }
