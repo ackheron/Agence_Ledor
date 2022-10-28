@@ -1,18 +1,22 @@
-/* import */
+/*----------  import  ----------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
 
-/* reset */
+
+/*----------  reset  ----------*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*=============================================
+=            général            =
+=============================================*/
 
-/* général */
 
 html,
 body {
@@ -68,9 +72,14 @@ em {
     color: white;
 }
 
+/*=====  End of général  ======*/
 
 
-/* vp +  header */
+
+
+/*=============================================
+=            Section vp + header            =
+=============================================*/
 
 .vp-container {
     min-height: 100vh;
@@ -120,6 +129,7 @@ header ul li a:hover {
     transition: 100ms;
 }
 
+
 header a:focus {
 
     /* Outline supprime le focus du navigateur */
@@ -154,9 +164,8 @@ header a:focus {
 }
 
 
-/*=============================================
-=            logo animation            =
-=============================================*/
+
+/*----------  logo animation  ----------*/
 
 .vp-logo a:before {
     content: attr(title);
@@ -203,8 +212,14 @@ header a:focus {
     line-height: 2.5rem;
 }
 
+/*=====  End of Section vp + header  ======*/
 
-/* offer */
+
+
+/*=============================================
+=            Section offer            =
+=============================================*/
+
 
 .offer {
     padding: 10rem 1rem;
@@ -247,8 +262,14 @@ header a:focus {
     background: #333;
 }
 
+/*=====  End of Section offer  ======*/
 
-/* who */
+
+
+/*=============================================
+=            who            =
+=============================================*/
+
 
 .who {
     display: flex;
@@ -282,9 +303,14 @@ header a:focus {
     line-height: 1.8rem;
 }
 
+/*=====  End of who  ======*/
 
 
-/* testimonials */
+
+/*=============================================
+=            testimonials            =
+=============================================*/
+
 
 .testimonials {
     padding: 5rem 1rem;
@@ -331,8 +357,12 @@ header a:focus {
     border-radius: 50%;
 }
 
+/*=====  End of testimonials  ======*/
 
-/* contact */
+
+/*=============================================
+=            contact            =
+=============================================*/
 
 .contact {
     padding: 10rem 1rem;
@@ -408,6 +438,7 @@ textarea:focus::placeholder {
     transition: 200ms;
 }
 
+/*=====  End of contact  ======*/
 
 
 /*=============================================
