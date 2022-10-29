@@ -1,0 +1,104 @@
+/*=============================================
+=            Section vp + header            =
+=============================================*/
+header {
+    flex-direction: column;
+    height: auto;
+}
+
+header ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+header ul li {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+}
+
+
+header ul li a:hover {
+    padding-top: 0;
+    border-bottom: 0;
+}
+
+
+.vp-content {
+    padding: 0.8rem;
+}
+
+.vp-content h1 {
+    font-size: 2rem;
+}
+
+.vp-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: normal;
+
+}
+
+/*=====  End of Section vp + header  ======*/
+
+
+/*=============================================
+=            Section offer            =
+=============================================*/
+
+.offer {
+    padding: 3rem 1rem;
+}
+
+
+
+/*=====  End of Section offer  ======*/
+
+
+/*=============================================
+=            Section who            =
+=============================================*/
+.who {
+    flex-direction: column-reverse;
+}
+
+.who-content-img {
+    min-height: 25rem;
+}
+
+
+/*=====  End of Section who  ======*/
+
+
+/*=============================================
+=            Section testimonials            =
+=============================================*/
+.testimonials-content {
+    text-align: center;
+}
+
+.testimonials-elem {
+    flex-direction: column;
+}
+
+.testimonials-elem:nth-child(2) {
+    flex-direction: column-reverse;
+}
+
+
+/*=====  End of Section testimonials  ======*/
+
+
+/*=============================================
+=            Section contact            =
+=============================================*/
+.contact {
+    padding: 3rem 1rem 0 1rem;
+}
+
+
+
+/*=====  End of Section contact  ======*/

@@ -279,11 +279,7 @@ header a:focus {
 
 .who-content-img {
     flex: 1;
-}
-
-.who-content-img img {
-    width: 100%;
-    /* object-fit: cover; */
+    background: url(../images/team.jpg) center center/cover;
 }
 
 .who-content-text {
